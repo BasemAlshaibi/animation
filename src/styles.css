@@ -1,0 +1,11 @@
+body {
+    background: #ececec;
+    padding: 4em;
+    font-family: arial;
+}
+
+router-outlet~* {
+    position: absolute;
+    height: 100%;
+    width: 70%;
+}

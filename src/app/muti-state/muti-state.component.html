@@ -1,0 +1,8 @@
+<img [src]="photoUrl" [@photoState]="postion" class="myphoto" />
+
+<br>
+
+<button (click)=" changePostion('move')" class="btn btn-primary">Translate</button>
+<button (click)=" changePostion('spin')" class="btn btn-primary">Rotate</button>
+<button (click)=" changePostion('enlarg')" class="btn btn-primary">scale</button>
+<button (click)=" changePostion(null)" class="btn btn-primary">Rest</button>

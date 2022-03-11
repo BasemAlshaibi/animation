@@ -1,0 +1,32 @@
+<div class="conteiner">
+    <input [(ngModel)]="newItem" class="w-100 mb-2 form-control" (keyup.enter)="addItem()">
+
+    <div [@listAnimation1]="Items.length" *ngIf="Items" class="btn-group-vertical w-100  ">
+
+        <div id="list" type="button" *ngFor="let item of Items ; let index = index;" (click)="deleteTask(index)">
+
+            {{item}}
+        </div>
+        <br>
+
+
+
+
+
+
+    </div>
+    <!-- class="btn  border-bottom w-100" -->
+
+    <div @explainerAnim>
+        <div class="col">
+            <p>I think Coursetro is one of the best learning resources online for Angular</p>
+        </div>
+        <div class="col">
+            <p>I think Coursetro is one of the best learning resources online for Angular</p>
+        </div>
+        <div class="col">
+            <p>I think Coursetro is one of the best learning resources online for Angular</p>
+        </div>
+
+
+    </div>

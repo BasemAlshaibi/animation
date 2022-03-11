@@ -1,0 +1,13 @@
+<div class="conteiner">
+    <input [(ngModel)]="newItem" class="w-100 mb-2 form-control" (keyup.enter)="addItem()">
+
+
+    <div [@fade]="Items.length" *ngIf="Items" class="btn-group-vertical w-100">
+        <button type="button" class="btn  border-bottom w-100" *ngFor="let item of Items ; let index = index;" (click)="deleteItem(index)">
+
+            {{item}}
+        </button>
+
+    </div>
+
+</div>
